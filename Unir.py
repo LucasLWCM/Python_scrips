@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-data_arquivo_folder = 'p1/'
+data_arquivo_folder = 'p1/' #Pasta onde o arquivo está localizado
 arquivos_carregados = 0
 
 df = pd.DataFrame()  # Inicializa um DataFrame vazio
