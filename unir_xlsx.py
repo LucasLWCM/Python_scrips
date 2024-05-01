@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-data_arquivo_folder = 'E:/Usuario/Documentos/Lançamentos/Okido/0524/Listas/GreatPages'  # Este caminho deve ser alterado para um diretório válido
+data_arquivo_folder = 'C:/Caminho/Pasta'  # Este caminho deve ser alterado para um diretório válido
 arquivos_carregados = 0
 
 df = pd.DataFrame()  # Inicializa um DataFrame vazio
@@ -29,7 +29,7 @@ if os.path.exists(data_arquivo_folder):
 
     if not df.empty:
         # Assegura que o caminho onde o arquivo será salvo é válido e acessível
-        output_path = os.path.join(data_arquivo_folder, 'E:/Usuario/Documentos/Lançamentos/Okido/0524/Listas/GreatPages/master_store.xlsx')
+        output_path = os.path.join(data_arquivo_folder, 'C:/Caminho/Pasta/master_store.xlsx')
         df.to_excel(output_path, index=False)
         print(f'Total de arquivos carregados: {arquivos_carregados}')
         print(f'Dados combinados salvos com sucesso em {output_path}.')
